@@ -30,33 +30,35 @@
             <div class="item">
                 <h3>Show all Members</h3>
                 <button id="btn-get-all">Get all</button>
-                <p id="all-members-result">Show what you find here</p>
+                <p id="all-members-result"></p>
             </div>
             <div class="item">
                 <h3>Find a single Member</h3>
                 <label for="text-for-username">Username</label>&nbsp;<input id="text-for-username" />
                 <button id="single-member-btn">Find</button>
-                <p id="single-member-result">Show what you find here</p>
+                <p id="single-member-result"></p>
             </div>
             <div class="item">
-                <h3>Add a Car</h3>
+                <h3>Add a Member</h3>
                 <form id="new-member-form">
-                    <div><label for="input_username_new">Username</label>&nbsp;<input id="input_username_new" type="text"/></div>
-                    <div><label for="input_password_new">Password</label>&nbsp;<input id="input_password_new" type="text"/></div>
-                    <div><label for="input_email_new">Email</label>&nbsp;<input id="input_email_new" type="text"/></div>
+                    <div><label for="input_username_new">Username</label>&nbsp;<input id="input_username_new"
+                            type="text" /></div>
+                    <div><label for="input_password_new">Password</label>&nbsp;<input id="input_password_new"
+                            type="text" /></div>
+                    <div><label for="input_email_new">Email</label>&nbsp;<input id="input_email_new" type="text" />
+                    </div>
                     <button id="submit-new-member">Submit new item</button>
                 </form>
-                <p id="new-member-result">Show returned data, if any</p>
-                <p>Use one of the two GET pages to verify that "something" was added</p>
+                <p id="new-member-result"></p>
             </div>
             <div class="item">
-                <h3>Edit a Car or a Member</h3>
-                <label for="text-for-id2">Id</label>&nbsp;<input id="text-for-id2" />
-                <button>Find item to edit</button>
-                <p>Show what you find here, and let users edit fields</p>
-                <p>......</p>
-                <button>Submit edited item</button>
-                <p>Use one of the two GET pages to verify that "something" was added</p>
+                <h3>Edit a Car</h3>
+                <form id="fetch_car_to_edit_form">
+                    <label for="edit_car_id">Id</label>&nbsp;<input id="edit_car_id" />
+                    <button>Find item to edit</button>
+                </form>
+                <form id="update_car_form"></form>
+                <p id="updated"></p>
             </div>
         </div>
     </div>
